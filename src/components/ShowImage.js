@@ -10,7 +10,7 @@ class ShowImage extends Component {
         return (
             <div>
             <div className = "ui placeholder segment">
-                <img src={URL.createObjectURL(this.props.img)}/>
+                <img src={this.props.img.src} alt=""/>
                 <div className="ui segment">
                 <button className="ui button red" onClick={this.handleDelete}>Delete</button>
                 </div>

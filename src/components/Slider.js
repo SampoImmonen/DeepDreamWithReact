@@ -13,7 +13,7 @@ class Slider extends Component {
                 <div>
                     <input type="range" min={this.props.min} max={this.props.max} value={this.props.value} step={this.props.step} onChange={this.handleChange} className="ui slider" id="myRange"/>
                     <div className="ui input">
-                        <input type="text" value={this.props.value} className="ui input" readOnly/>
+                        {this.props.value}
                     </div>
                 </div>
             </div>

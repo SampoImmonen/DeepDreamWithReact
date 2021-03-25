@@ -10,3 +10,7 @@
 .centercontent {
     align-content: center;
 }
+
+.bordered {
+    border: 2px;
+}

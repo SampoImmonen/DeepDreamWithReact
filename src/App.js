@@ -3,8 +3,9 @@ import UploadApp from './components/UploadApp.js'
 class App extends Component {
 
   handleApitest = () => {
-    fetch('/test')
-    .then(response => console.log(response))
+    fetch('/home')
+    .then(response => response.json())
+    .then(data => console.log(data))
   }
 
   render() {
