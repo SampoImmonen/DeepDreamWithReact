@@ -102,11 +102,7 @@ def subnetwork_output(img, model, layer_index, category=None):
                 break
     
     return x
-def octave_function(img, model, octave_scale=1.3):
-    """
-    implements the octaves to get deepdream details on multiple scales
-    down sizes image deepdreams on that and combine dreams on all scales
-    """
+
 def get_layer_count(model):
     return len([1 for layer in model.features if 'Conv' in repr(layer)])
 
