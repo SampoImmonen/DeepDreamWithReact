@@ -119,7 +119,6 @@ def calculate_loss(features, control=None):
         return -b[:, index].view(ch, w, h).unsqueeze(0)
     return -features
 
-
 def dreamdeep(img, layer_index, octave_scale, octave_min, octave_max, n_iters, orig_add=True):
     
     h, w = img.size()[2:]
@@ -139,8 +138,6 @@ def dreamdeep(img, layer_index, octave_scale, octave_min, octave_max, n_iters, o
         print(new_img.size())
         img = dream_step(model, new_img, layer_index=layer_index, n_iters=n_iters, control=control_features)
     return img
-
-
 
 def img2deepdream2img(content, layer_index, octave_scale, octave_min, octave_max, n_iters, orig_add=True):
     img = imagetotensor(content, NormalTransform, device=device)

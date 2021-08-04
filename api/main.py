@@ -8,8 +8,7 @@ from deepdream import *
 
 #initialize global variables
 initialize()
-
-
+#create fastAPI instance
 app = FastAPI()
 
 #route to test server connection
@@ -28,15 +27,15 @@ async def handledeepdream(image: UploadFile = Form(...),
                           num_iters: str = Form(...),
                           layer_index: str = Form(...)
                           ):
-    
+
+    #for debugging 
     print(octavestep)
     print(octavesmax)
     print(octavesmin)
     print(num_iters)
     print(layer_index)
-    #print(octavesmin)
-    #print("request received")
     print(image.content_type)
+    
     content = await image.read()
     deepimage = img2deepdream2img(content, layer_index=int(layer_index), octave_scale=float(octavestep), octave_min=int(octavesmin), octave_max=int(octavesmax), n_iters=int(num_iters), orig_add=True)
     #deepimage.show()
