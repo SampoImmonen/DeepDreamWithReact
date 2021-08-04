@@ -7,11 +7,10 @@
 - ability to upload image and select settings
 - information to see produced image size and size of lowest and highest octave images
 - ability to download produced image 
-![alt text](https://github.com/SampoImmonen/DeepDreamWithReact/blob/master/media/example.PNG)
-
+![alt text](https://github.com/SampoImmonen/DeepDreamWithReact/blob/master/media/frontned.PNG)
 
 ## Backend with FastAPI
 ## DeepDream code with pytorch
 - uses vgg16 network to produce images
 ## Sample Image
-![alt text](https://github.com/SampoImmonen/DeepDreamWithReact/blob/master/media/frontned.PNG)
+![alt text](https://github.com/SampoImmonen/DeepDreamWithReact/blob/master/media/example.PNG)
